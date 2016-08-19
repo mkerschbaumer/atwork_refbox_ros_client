@@ -1,5 +1,5 @@
 #include <ros/ros.h>
-#include <at_work_robot_example_ros/robot_example_ros.h>
+#include <atwork_robot_example_ros/robot_example_ros.h>
 
 int main(int argc, char **argv)
 {

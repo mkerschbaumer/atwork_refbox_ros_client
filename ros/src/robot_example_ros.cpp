@@ -1,4 +1,4 @@
-#include <at_work_robot_example_ros/robot_example_ros.h>
+#include <atwork_robot_example_ros/robot_example_ros.h>
 
 RobotExampleROS::RobotExampleROS(const ros::NodeHandle &nh):
     nh_(nh), seq_(0), 
