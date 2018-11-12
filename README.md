@@ -92,10 +92,10 @@ We can compile the refree box and test it.
 
 7. Cloning this repository for ros topics
     
-    ``` cd catkin workspace ```
-    ``` git clone https://github.com/industrial-robotics/atwork_refbox_ros_client ```
-    ``` cd atwork_refbox_ros_client ```
-    ``` catkin build --this ```
+        cd catkin workspace
+        git clone https://github.com/industrial-robotics/atwork_refbox_ros_client
+        cd atwork_refbox_ros_client
+        catkin build --this
 
    
 ## Usage
