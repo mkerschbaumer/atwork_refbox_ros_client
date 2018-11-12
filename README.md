@@ -62,41 +62,40 @@ Before installation of this we need to install all the dependency.
         sudo apt-get install scons libboost-all-dev
 
 3. Clone the atwork_refbox_comm repository
-    cd <catkin_workspace>/src
-    git clone git@github.com:industrial-robotics/atwork_refbox_comm.git
-    cd atwork_refbox_comm
-    git checkout erl-2018
-    git submodule init
-    git submodule update
+
+        cd <catkin_workspace>/src
+        git clone git@github.com:industrial-robotics/atwork_refbox_comm.git
+        cd atwork_refbox_comm
+        git checkout erl-2018
+        git submodule init
+        git submodule update
 
 4. Compilation 
-    cd <catkin_workspace>
-    catkin build
+        cd <catkin_workspace>
+        catkin build
 
 
 5. Compiling the refbox 
 The above step also gets the refree box inside folder **atwork_refbox**.
 We can compile the refree box and test it.
 
-    cd atwork_refbox
-    make 
+        cd atwork_refbox
+        make 
 
 6. Running refbox
 
-    * Start the RefBox: ./bin/refbox
-    * Start the controller: ./bin/atwork-controller
-    * Start the viewer: ./bin/atwork-viewer
+        * Start the RefBox: ./bin/refbox
+        * Start the controller: ./bin/atwork-controller
+        * Start the viewer: ./bin/atwork-viewer
 
     
 
 7. Cloning this repository for ros topics
-
-``` $> cd <catkin workspace> ```
-``` $> git clone https://github.com/industrial-robotics/atwork_refbox_ros_client ```
-
-``` $> cd atwork_refbox_ros_client ```
-
-``` $> catkin build --this ```
+    
+    ``` cd catkin workspace ```
+    ``` git clone https://github.com/industrial-robotics/atwork_refbox_ros_client ```
+    ``` cd atwork_refbox_ros_client ```
+    ``` catkin build --this ```
 
    
 ## Usage
