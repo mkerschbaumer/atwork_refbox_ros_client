@@ -1,7 +1,7 @@
 # at_work_refbox_ros_client
 ====================
 
-Demo ros node for demonstrating the ussage of protobuf messages inside ROS.
+Demo ros node for demonstrating the usage of protobuf messages from the atwork refbox inside ROS nodes.
 
 ## Node Dependancy
 Depends on the following packages;
@@ -66,11 +66,11 @@ Before installation of this we need to install all the dependency.
         cd <catkin_workspace>/src
         git clone git@github.com:industrial-robotics/atwork_refbox_comm.git
         cd atwork_refbox_comm
-        git checkout erl-2018
         git submodule init
         git submodule update
 
 4. Compilation 
+
         cd <catkin_workspace>
         catkin build
 
