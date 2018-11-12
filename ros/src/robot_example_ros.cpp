@@ -28,6 +28,8 @@ RobotExampleROS::RobotExampleROS(const ros::NodeHandle &nh):
     robot_status_report_sub_ = nh_.subscribe<atwork_ros_msgs::RobotStatusReport>(
                         "robot_status_report", 10, &RobotExampleROS::RobotStatusReportCB, this);
 
+    benchmark_feedback_sub_ = nh_.subscribe<atwork_ros_msgs::BenchmarkFeedback>(
+                         "bechmark_feedback", 10, &RobotExampleROS::BenchmarkFeedbackCB, this);
     initializeRobot();
 }
 
@@ -72,6 +74,25 @@ void RobotExampleROS::InventoryTransactionCB(atwork_ros_msgs::Transaction msg)
 }
 */
 
+void RobotExampleROS::BenchmarkFeedbackCB(atwork_ros_msgs::BenchmarkFeedback msg)
+{
+    //create a new message
+    std::shared_ptr<BenchmarkFeedback> benchmark_feedback(new BenchmarkFeedback);
+
+    //fill the message
+    atwork_pb_msgs::BenchmarkState_Phase phase = benchmark_feedback->phase_to_terminate();
+    phase = (atwork_pb_msgs::BenchmarkState_Phase)msg.phase_to_terminate.data;
+    benchmark_feedback->set_phase_to_terminate(phase);
+
+    benchmark_feedback->set_object_class_name(msg.object_class_name.data);
+
+    benchmark_feedback->set_object_instance_name(msg.object_instance_name.data);
+
+    benchmark_feedback->set_grasp_notification(msg.grasp_notification.data);
+
+    //send message
+    peer_team_->send(benchmark_feedback);
+}
 void RobotExampleROS::LoggingStatusCB(atwork_ros_msgs::LoggingStatus msg)
 {
     //create a new message

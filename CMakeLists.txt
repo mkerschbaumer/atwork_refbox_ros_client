@@ -14,7 +14,7 @@ find_package(catkin REQUIRED
     geometry_msgs
     message_generation
 )
-
+find_package(Protobuf)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=gnu++0x -DHAVE_LIBCRYPTO")
 
@@ -39,6 +39,7 @@ add_executable(robot_example_ros
 target_link_libraries(robot_example_ros
    ${catkin_LIBRARIES}
    ${Boost_LIBRARIES}
+   ${PROTOBUF_LIBRARIES}
 )
 
 add_dependencies(robot_example_ros atwork_ros_msgs_generate_messages_cpp)
