@@ -64,7 +64,7 @@ Before installation of this we need to install all the dependency.
 3. Clone the atwork_refbox_comm repository
 
         cd <catkin_workspace>/src
-        git clone git@github.com:industrial-robotics/atwork_refbox_comm.git
+        git clone https://github.com/industrial-robotics/atwork_central_factory_hub/tree/erl-2018
         cd atwork_refbox_comm
         git submodule init
         git submodule update
@@ -93,7 +93,7 @@ We can compile the refree box and test it.
 7. Cloning this repository for ros topics
     
         cd catkin workspace
-        git clone https://github.com/industrial-robotics/atwork_refbox_ros_client
+        git clone https://github.com/industrial-robotics/atwork_refbox_ros_client/tree/erl-2018
         cd atwork_refbox_ros_client
         catkin build --this
 
