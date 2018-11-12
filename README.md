@@ -57,12 +57,11 @@ Before installation of this we need to install all the dependency.
 
         sudo apt-get install mongodb-dev boost1.54-all-dev
 
-     (If using 16.04, use default boost, and install legacy mongo-cxx-driver from source)
+     (If using 16.04, use default boost)
 
         sudo apt-get install scons libboost-all-dev
 
 3. Clone the atwork_refbox_comm repository
-
     cd <catkin_workspace>/src
     git clone git@github.com:industrial-robotics/atwork_refbox_comm.git
     cd atwork_refbox_comm
@@ -75,8 +74,7 @@ Before installation of this we need to install all the dependency.
     catkin build
 
 
-5. Compiling the refee box
-
+5. Compiling the refbox 
 The above step also gets the refree box inside folder **atwork_refbox**.
 We can compile the refree box and test it.
 
@@ -93,7 +91,7 @@ We can compile the refree box and test it.
 
 7. Cloning this repository for ros topics
 
-``` $> cd <catkin workspace>
+``` $> cd <catkin workspace> ```
 ``` $> git clone https://github.com/industrial-robotics/atwork_refbox_ros_client ```
 
 ``` $> cd atwork_refbox_ros_client ```
@@ -107,4 +105,4 @@ We can compile the refree box and test it.
 
 ## Testing 
 
-
+TODO
