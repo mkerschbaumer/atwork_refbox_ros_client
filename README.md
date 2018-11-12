@@ -75,22 +75,9 @@ Before installation of this we need to install all the dependency.
         catkin build
 
 
-5. Compiling the refbox 
-The above step also gets the refree box inside folder **atwork_refbox**.
-We can compile the refree box and test it.
-
-        cd atwork_refbox
-        make 
-
-6. Running refbox
-
-        * Start the RefBox: ./bin/refbox
-        * Start the controller: ./bin/atwork-controller
-        * Start the viewer: ./bin/atwork-viewer
-
     
 
-7. Cloning this repository for ros topics
+5. Cloning this repository for ros topics
     
         cd catkin workspace
         git clone https://github.com/industrial-robotics/atwork_refbox_ros_client/tree/erl-2018
