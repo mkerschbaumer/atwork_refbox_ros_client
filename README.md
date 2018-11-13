@@ -42,7 +42,7 @@ Before installation of this we need to install all the dependency.
         sudo add-apt-repository ppa:timn/clips
     (Note: This PPA currently only works for Ubuntu 12.04, 12.10, 14.04 and 16.04)
     
-2. Install the dependencies for both LLSFRB and CFH (12.04, 12.10, 14.04):
+2. Install the dependencies for both LLSFRB and CFH (12.04, 12.10, 14.04, 16.04):
         
         sudo apt-get update
         sudo apt-get install libmodbus-dev libclips-dev clips libclipsmm-dev \
@@ -64,15 +64,17 @@ Before installation of this we need to install all the dependency.
 3. Clone the atwork_refbox_comm repository
 
         cd <catkin_workspace>/src
-        git clone https://github.com/industrial-robotics/atwork_central_factory_hub/tree/erl-2018
+        git clone -b erl-2018 https://github.com/industrial-robotics/atwork_refbox_comm 
         cd atwork_refbox_comm
         git submodule init
         git submodule update
+        cd atwork_refbox
+        git checkout erl-2018
 
 4. Compilation 
 
         cd <catkin_workspace>
-        catkin build
+        catkin build or catkin_make
 
 
     
@@ -80,9 +82,9 @@ Before installation of this we need to install all the dependency.
 5. Cloning this repository for ros topics
     
         cd catkin workspace
-        git clone https://github.com/industrial-robotics/atwork_refbox_ros_client/tree/erl-2018
+        git clone -b erl-2018 https://github.com/industrial-robotics/atwork_refbox_ros_client
         cd atwork_refbox_ros_client
-        catkin build --this
+        catkin build --this / catkin_make
 
    
 ## Usage
