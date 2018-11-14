@@ -2,9 +2,9 @@
 ====================
 
 Demo ros node for demonstrating the usage of protobuf messages from the atwork refbox inside ROS nodes.
-<div class="alert alert-info" role="alert">
+<aside class="notice">
   <strong>Note!</strong> Below steps has to be done in the robot to communicte with the refbox.
-</div>
+</aside>
 
 ## Compilation and Installation
 
