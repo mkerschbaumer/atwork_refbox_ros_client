@@ -3,33 +3,7 @@
 
 Demo ros node for demonstrating the usage of protobuf messages from the atwork refbox inside ROS nodes.
 
-## Node Dependancy
-Depends on the following packages;
-```
-protobuf_comm
-atwork_pb_msgs
-atwork_ros_msgs
-Protobuf
-```
-### protobuf_comm
-
-This CMake project locates the protobuf_comm library from the atwork-refbox and builds it.
-It is installed into your catkin workspace for ros packages to find and use.
-
-
-### atwork_pb_msgs
-
-This CMake project will locates the protobuf messages from the atwork-refbox submodule and builds them. 
-They are then installed in your catkin workspace.
-
-### atwork_ros_msgs
-
-ros messages defined to communicate with other clients.
-NOTE: This can be totally avoided if you can work with protobuf commands.
-
-### Protobuf
-Library required for communicating to Protobuf.
-
+**NOTE: Below steps has to be done in the robot to communicte with the refbox.**
 
 ## Compilation and Installation
 
