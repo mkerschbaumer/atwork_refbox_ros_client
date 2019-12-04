@@ -4,7 +4,7 @@
 
 #include <atwork_pb_msgs/BeaconSignal.pb.h>
 #include <atwork_pb_msgs/BenchmarkState.pb.h>
-#include <atwork_pb_msgs/BenchmarkFeedback.pb.h>
+// #include <atwork_pb_msgs/BenchmarkFeedback.pb.h>
 #include <atwork_pb_msgs/ConveyorBelt.pb.h>
 #include <atwork_pb_msgs/Inventory.pb.h>
 #include <atwork_pb_msgs/TaskInfo.pb.h>
@@ -25,7 +25,7 @@
 #include <atwork_ros_msgs/TriggeredConveyorBeltCommand.h>
 #include <atwork_ros_msgs/LoggingStatus.h>
 #include <atwork_ros_msgs/RobotStatusReport.h>
-#include <atwork_ros_msgs/BenchmarkFeedback.h>
+// #include <atwork_ros_msgs/BenchmarkFeedback.h>
 
 #include <boost/asio.hpp>
 #include <boost/date_time.hpp>
@@ -108,7 +108,7 @@ class RobotExampleROS
 
         void RobotStatusReportCB(atwork_ros_msgs::RobotStatusReport msg);
 
-        void BenchmarkFeedbackCB(atwork_ros_msgs::BenchmarkFeedback msg);
+        // void BenchmarkFeedbackCB(atwork_ros_msgs::BenchmarkFeedback msg);
     private:
         /**
          * ROS node handle.

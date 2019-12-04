@@ -28,8 +28,10 @@ RobotExampleROS::RobotExampleROS(const ros::NodeHandle &nh):
     robot_status_report_sub_ = nh_.subscribe<atwork_ros_msgs::RobotStatusReport>(
                         "robot_status_report", 10, &RobotExampleROS::RobotStatusReportCB, this);
 
+    /*
     benchmark_feedback_sub_ = nh_.subscribe<atwork_ros_msgs::BenchmarkFeedback>(
                          "bechmark_feedback", 10, &RobotExampleROS::BenchmarkFeedbackCB, this);
+     */
     initializeRobot();
 }
 
@@ -74,6 +76,7 @@ void RobotExampleROS::InventoryTransactionCB(atwork_ros_msgs::Transaction msg)
 }
 */
 
+/*
 void RobotExampleROS::BenchmarkFeedbackCB(atwork_ros_msgs::BenchmarkFeedback msg)
 {
     //create a new message
@@ -93,6 +96,7 @@ void RobotExampleROS::BenchmarkFeedbackCB(atwork_ros_msgs::BenchmarkFeedback msg
     //send message
     peer_team_->send(benchmark_feedback);
 }
+*/
 void RobotExampleROS::LoggingStatusCB(atwork_ros_msgs::LoggingStatus msg)
 {
     //create a new message
